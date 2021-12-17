@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+	z-index: 20;
+}
+.posicion{
+	z-index: 10;
+}
+.textoNv{
+    color: #f8f9fa;
+    cursor: pointer;
+}
+.textoNav{
+	color: #f8f9fa;
+    cursor: pointer;
+	text-decoration: none;
+}
+.textoNav:hover{
+	color: #70e000;
+}
+.colorDeFondo{
+    background: #495057;
+}
+.colorDeFondoSection{
+    background-color: #161a1d;
+}
+.colorbtn{
+    width: 150px;
+    height: 40px;
+    background-color: #1b263b;
+    color: #f8f9fa;
+    text-decoration: none;
+    border: none;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.colorbtn:hover{
+    background-color: #f8f9fa;
+    color: #1b263b;
+}
+.textoArmaTuPc{
+    color: #979dac;
+}
+.icono{
+    width: 150px;
+}
+.primerPaso{
+    padding: 50px;
+    color: #979dac;
+}
+#carrito{
+    color: #70e000;
+}
+.carritoIcon{
+    color: #70e000;
+}
+.auricularesImg{
+    width: 550px;
+}
+.auricularesImg:hover{
+    transform: scale(1.05); 
+    transition: 0.4s;
+    cursor: pointer;
+}
+.auricularesImgFz{
+    width: 520px;
+}
+.auricularesImgFz:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+    cursor: pointer;
+}
+.modificacionDeImg{
+    width: 500px;
+    height: 480px;
+}
+.textoMasBuscado{
+    color: #979dac;
+}
+.efectoTocar:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+    cursor: pointer;
+}
+.textoNuevaSeccion{
+    color: #70e000;
+    padding: 50px;
+}
+.botonIngresar{
+    width: 100px;
+    height: 25px;
+    background: transparent;
+    color: #979dac;
+    text-decoration: none;
+    border: none;
+}
+.botonIngresar:hover{
+    color: #f8f9fa;
+}
+.modificacionInput{
+    background: none;
+    color: #979dac;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #70e000;
+}
+.modificacionInput:focus{
+    outline: none;
+}
+.probando{
+    width: 500px;
+    height: 250px;
+}
+.botonEliminar{
+    height: 60px;
+    width: 90px;
+    background-color: #ef233c;
+    color: #f8f9fa;
+    text-decoration: none;
+}
+.textoLista{
+    font-size: 15px;
+    color: #161a1d;
+}
+.fondo{
+    background-color: #70e000;
+}
+.colorDeFondoFormulario{
+    background-image: url("https://logodownload.org/wp-content/uploads/2018/01/razer-logo.png");
+    background-size: cover;
+    opacity: 75%;
+    border-radius: 10px;
+}
+.container {
+	width: 90%;
+	max-width: 1000px;
+	padding: 40px 20px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.tarjeta {
+	width: 100%;
+	max-width: 550px;
+	position: relative;
+	color: #fff;
+	transition: .3s ease all;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.tarjeta.active {
+	transform: rotateY(180deg);
+}
+
+.tarjeta > div {
+	padding: 30px;
+	border-radius: 15px;
+	min-height: 315px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 10px 10px 0 rgba(90,116,148,0.3);
+}
+
+/*Parte de adelante de la tarjeta*/
+
+.tarjeta .adelante {
+	width: 100%;
+	height: 200px;
+	background-image: url(imagenes/fondodetarjeta.jpg);
+	background-size: cover;
+}
+.adelante .logoMarca {
+	text-align: right;
+	min-height: 50px;
+}
+.adelante .logoMarca img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 100px;
+}
+.adelante .chip {
+	width: 100%;
+	max-width: 100px;
+	margin-bottom: 10px;
+}
+.adelante .grupo .label {
+	font-size: 16px;
+	color: #7d8994;
+	margin-bottom: 5px;
+}
+.adelante .grupo .numero,
+.adelante .grupo .nombre,
+.adelante .grupo .expiracion {
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.adelante .datosTarjeta {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5px;
+}
+
+/*Parte de atras de la tarjeta*/
+
+.atras {
+    width: 100%;
+	height: 100%;
+	background-image: url(imagenes/fondodetarjeta.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+.atras .barra-magnetica {
+	height: 40px;
+	background: #000;
+	width: 100%;
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+.atras .datos {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+.atras .datos p {
+	margin-bottom: 5px;
+}
+
+.atras .datos #firma {
+	width: 70%;
+}
+
+.atras .datos #firma .firma {
+	height: 40px;
+	background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px);
+}
+.atras .datos #firma .firma p {
+	line-height: 40px;
+	font-family: 'Liu Jian Mao Cao', cursive;
+	color: #000;
+	font-size: 30px;
+	padding: 0 10px;
+	text-transform: capitalize;
+}
+
+.atras .datos #ccv {
+	width: 20%;
+}
+.atras .datos #ccv .ccv {
+	background: #fff;
+	height: 40px;
+	color: #000;
+	padding: 10px;
+	text-align: center;
+}
+
+.atras .leyenda {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.atras .link-banco {
+	font-size: 14px;
+	color: #fff;
+}
+
+/*Formulario de tarjeta*/
+
+#fondoFormulario{
+	background-color: #ced4da;
+	width: 600px;
+	height: 450px;
+	margin-top: 50px;
+}
+.tarjetaFormulario label{
+	display: block;
+	color: #1b263b;
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+
+.tarjetaFormulario input,
+.tarjetaFormulario select{
+	border: 2px solid #f8f9fa;
+	font-size: 18px;
+	height: 50px;
+	width: 100%;
+	padding: 5px 12px;
+	transition: .3s ease all;
+	border-radius: 3px;
+}
+.tarjetaFormulario input:hover,
+.tarjetaFormulario select:hover{
+	border: 2px solid #48cae4;
+}
+.tarjetaFormulario input:focus,
+.tarjetaFormulario select:focus{
+	outline: #52b69a;
+	box-shadow: 1px 7px 10px -5px #52b69a;
+}
+.tarjetaFormulario input{
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.tarjetaFormulario .acomodarObj{
+	display: flex;
+	justify-content: space-between;
+}
+.tarjetaFormulario .grupoExpiracion{
+	width: 100%;
+}
+.tarjetaFormulario .grupo2{
+	min-width: 100px;
+}
+.tarjetaFormulario .grupoSelect{
+	width: 100%;
+	margin-right: 15px;
+	position: relative;
+}
+.tarjetaFormulario select{
+	-webkit-appearance: none;
+}
+.tarjetaFormulario .grupoSelect i{
+	position: absolute;
+	color: #161a1d;
+	top: 18px;
+	right: 15px;
+	transition: 0.3s ease all;
+}
+.tarjetaFormulario .grupoSelect i:hover{
+	color: #52b69a;
+}
+
+/*Comprobante*/
+
+.comprobante{
+	background-color: #adb5bd;
+	border-radius: 20px;
+}
+.comprobante h4{
+	font-family: 'Raleway', sans-serif;
+}
+.comprobante p{
+	font-size: 18px;
+}
+.formTarjYPago{
+	margin-top: 100px;
+}
